@@ -7,6 +7,9 @@ MAINTAINER Jan-Erik Revsbech <jer@peytz.dk>
 RUN npm install -g bower grunt-cli && \
     echo '{ "allow_root": true }' > /root/.bowerrc
 
+# Install Webpack 2
+npm install -g webpack
+
 # Install ruby
 RUN apt-get update && \
     apt-get -y install ruby-full
