@@ -8,7 +8,7 @@ to install these tools locally.
 
 The container has workdir /var/www/application. 
 
-The container contains node v6.4, ruby v1.9 and compass in version 1.0.3
+The container contains node v12.10, ruby v2.3 and compass in version 1.0.3
 
 Using with docker-compose
 -------------------------

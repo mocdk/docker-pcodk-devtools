@@ -1,14 +1,15 @@
-FROM node
+FROM node:12
 MAINTAINER Jan-Erik Revsbech <jer@peytz.dk>
 
-
+RUN node -v
+RUN npm -v
 
 # Install Bower & Grunt
 RUN npm install -g bower grunt-cli && \
     echo '{ "allow_root": true }' > /root/.bowerrc
 
-# Install Webpack 2
-RUN npm install -g webpack
+# Install Webpack 3
+RUN npm install -g webpack@3
 
 # Install ruby
 RUN apt-get update && \
